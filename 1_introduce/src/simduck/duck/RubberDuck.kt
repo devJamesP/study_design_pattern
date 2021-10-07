@@ -1,6 +1,4 @@
-package simduck
-
-import simduck.base.Duck
+package simduck.duck
 
 class RubberDuck : Duck(){
     override fun display() {

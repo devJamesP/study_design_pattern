@@ -1,19 +1,14 @@
-import simduck.MallardDuck
-import simduck.RedheadDuck
+import simduck.behavior.FlyRocketPowered
+import simduck.duck.Duck
+import simduck.duck.MallardDuck
+import simduck.duck.RedheadDuck
 
 fun main() {
-    val redheadDuck = RedheadDuck()
-    val mallardDuck = MallardDuck()
+    val duck: Duck = MallardDuck()
+    duck.display()
+    duck.swim()
+    duck.performFly()
 
-    with(redheadDuck) {
-        quack()
-        swim()
-        display()
-    }
-
-    with(mallardDuck) {
-        quack()
-        swim()
-        display()
-    }
+    duck.flyBehavior = FlyRocketPowered()
+    duck.performFly()
 }

@@ -1,4 +1,4 @@
-package simduck.feature
+package simduck.behavior
 
 interface FlyBehavior {
     fun fly()

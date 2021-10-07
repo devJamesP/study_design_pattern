@@ -1,6 +1,6 @@
-package simduck
+package simduck.duck
 
-import simduck.base.Duck
+import simduck.duck.Duck
 
 class DecoyDuck : Duck(){
     override fun display() {

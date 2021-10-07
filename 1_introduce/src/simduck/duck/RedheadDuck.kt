@@ -1,6 +1,4 @@
-package simduck
-
-import simduck.base.Duck
+package simduck.duck
 
 class RedheadDuck: Duck() {
     override fun display() {
