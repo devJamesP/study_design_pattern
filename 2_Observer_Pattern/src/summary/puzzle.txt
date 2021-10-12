@@ -1,0 +1,23 @@
+1. Observable은 인터페이스가 아니라__입니다. : class(클래스)
+2. 론은 옵저버이면서 동시에 __였습니다. : Subject(주제)
+3(가로). DevilListener와 AngelListener는 버튼을 __하고 있습니다. : listening(감시)
+3(세로). 결합은 __하게 해야 합니다. : loose(느슨)
+4. 연락을 받고 싶으면 이 메소드를 구현해야 합니다. : update
+5. 질은 __을 직접 구했습니다. : job(직장)
+6. CurrentConditionsDisplay에서 이 인터페이스를 구현합니다. : Observer
+7. 아까 누가 그냥 저질러 버리라고 했었죠? : DevilListener
+8. 옵저버 목록에서 탈퇴하는 방법 : removeObserver
+9. __이 여러분 대신 옵저버들을 관리해줬죠? : Observable
+10. 옵저버가 아주 많이 있는 자바 프레임워크 : swing
+11. Weather-O-Rama사의 CEO이름 : Hurricane(허리케인)
+12. 연락이 가야 되는데 안 갔다면 이걸 빼먹었는지 확인해야 합니다. : setChanged
+13. 뭔가 새로운 일이 생기면 옵저버는 __을 받고 싶어합니다. : notified(연락)
+14. WeatherData 클래스는 Subject 인터페이스를 __합니다. : implements(구현)
+15. 주제와 옵저버 사이의 관계는 일대_ 관계죠 : many(다)
+16. 얘는 int 값들을 더 이상 받고 싶지 않아서 탈퇴해 버렸었죠. : mouse
+17. Weater-O-Rama에서 뒤늦게 __디스플레이가 필요하다고 주문을 했습니다. : HEAT(체감 온도)
+18. 연락이 돌아가는 __에는 절대 의존하면 안됩니다. : order(순서)
+19. 기온, 습도, 그리고? : pressure(기압)
+20. 옵저버는 주제에 __합니다. : dependent(의존)
+21. 특정 구현이 아니라 __에 맞춰서 프로그래밍합니다. : interface(인터페이스)
+22. 주제 객체는 __에 비유할 수 있습니다. : publisher(출판사)
