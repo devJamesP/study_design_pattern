@@ -1,0 +1,23 @@
+데코레이터가 작용된 예: 자바 I/O
+
+만약 어떤 텍스트 파일을 읽어야 한다면 JAVA I/O에 있는 엄청나게 많은 API들이 있는데
+이 패키지들은 '데코레이터 패턴'으로 구성되어 있다.
+
+만약 test.txt라는 파일을 읽어야 한다면
+* FileInputStream이 root가 되는 데코레이터로 포장될 구성 요소다.
+자바 I/O 라이브러리에서는
+FileInputStream,
+StringBufferInputStream,
+ByteArrayInputStream과 같은 구성요소를 제공한다.
+
+이것들을 모두 데이터를 읽어들일 수 있게 해 주는 기본 구성요소 역할을 한다.
+
+* BufferedInputStream은 구상 데코레이터이다.
+이 데코레이터는 두 가지 행동을 추가해준다. 우선 속도를 향상시키기 위해
+입력된 내용을 버퍼에 저장하고, 그리고 문자로 입력된 내용을 한 번에 한 줄씩 읽어들이기 위한
+readLine() 메소드가 들어있는 인터페이스를 구현한다.(지금은 readLine() 인터페이스 구현 안되있는 듯?)
+
+* LineNumberInputStream(deprecated)도 구상 데코레이터이다. 데이터를 읽을 때 행번호를 붙여주는 기능을 추가해 준다.
+
+BufferedInputStream과 LineNumberInputStream은 모두 FilterInputStream을 확장한 클래스이다.
+FilterInputStream은 추상 데코레이터 클래스 역할을 한다.
