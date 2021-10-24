@@ -1,0 +1,80 @@
+**[문제]**
+두 스레드에서 다른 보일러 객체를 사용하게 될 가능성은 없을까?
+
+[Java]
+public static ChocolateBoiler getInstance() {
+    if (uniqueInstance == null) {
+        uniqueInstance = new ChocolateBoiler();
+    }
+    return uniqueInstance;
+}
+
+uniqueInstance의 객체가 null인 경우
+
+[1번 스레드]
+새로운 ChocolateBoiler()객체를 생성함.
+[2번 스레드]
+새로운 ChocolateBoiler()객체를 생성함.
+
+※ 따라서 두 스레드에서 생성된 객체는 unique하지 않다!
+
+
+
+**[해결책]**
+멀티스레딩 문제 해결 방법
+
+[Java]
+public class Singleton {
+    private static Singleton uniqueInstance;
+
+    // 기타 인스턴스 변수
+
+    private Singleton() { }
+
+    public static synchronized Singleton getInstance() {
+        if (uniqueInstance == null) {
+            uniqueInstance = new Singleton();
+        }
+        return uniqueInstance;
+    }
+
+    // 기타 메소드
+}
+: 단, 해당 메소드가 끝날 때 까지 다른 스레드는 동작하지 않음. (즉, 동시에 실행시키는 일은 일어나지 않음)
+그래서 사실 불필요 하게 오버헤드만 증가된 코드임.
+동기화가 필요한 시점은 uniqueInstance에 Singleton객체를 할당하는 과정 뿐임.
+
+
+더 효율 적인 방법은 없을까?
+1. getInstance()의 속도가 그리 중요하지 않다면...
+: 그냥 두자! 동기화시키는게 그리 어려운 일도 아니고, 효율 면에서도 괜찮을 수도 있다.
+단, 메소드를 동기화하면 성능이 100배 저하된다는 것은 기억해 두자!
+
+2. 인스턴스를 필요할 때 생성하지 말고 처음부터 만들어 버리자
+: 인스턴스를 실행중에 수시로 만들고 관리하기가 성가시다면 아예 만들어버리는 것도 괜찮은 방법이다.
+이런 접근법을 사용하면 클래스가 로딩될 때 JVM에서 Singleton의 유일한 인스턴스를 생성해 준다.
+JVM에서 유일한 인스턴스를 생성하기 전에는 그 어떤 스레드도 uniqueInstance 정적 변수에 접근 할 수 없다.
+
+3. DCL(Double-Checking Locking)을 써서 getInstance()에서 동기화되는 부분을 줄인다.
+DCL(Double-Checking Locking)을 사용하면, 일단 인스턴스가 생서되어 있는지 확인한 다음,
+생성되어 있지 않았을 때만 동기화를 할 수 있다. 이렇게 하면 처음에만 동기화를 하고 나중에는 동기화를 하지 않아도 된다.
+[Java]
+public class Singleton {
+    private volatile static Singleton uniqueInstance;
+
+    private Singleton() { }
+
+    public static Singleton getInstance() {
+        if (uniqueInstance == null) {
+            synchronized(Singleton.class) { //이렇게 하면 처음에만 동기화
+                uniqueInstance = new Singleton();
+            }
+        }
+
+        return uniqueInstance;
+    }
+}
+volatile 키워드를 사용하면 멀티스레딩을 쓰더라도 uniqueInstance 변수가
+Singleton 인스턴스로 초기화되는 과정이 올바르게 진행되도록 할 수 있다.)
+이렇게 Singleton을 구현함으로써 오버헤드를 줄일 수 있다.
+
