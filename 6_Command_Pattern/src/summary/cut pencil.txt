@@ -1,0 +1,5 @@
+차고 문을 열기 위한 GarageDoorOpenCommand 클래스를 만들어 보자
+GarageDoor의 클래스 다이어그램에는
+up(), down(), stop(), lightOn(), lightOff() 메소드가 있음.
+
+[command_pattern 패키지 참조!]
