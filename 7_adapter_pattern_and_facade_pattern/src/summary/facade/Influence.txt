@@ -1,0 +1,19 @@
+[친구는 만들지 않으면서 다른 객체에 영향력을 행사하는 방법]
+여러 객체와 인연을 맺는 것을 피하는 방법!
+다음 종류의 객체에서만 메소드를 호출한다!
+1. 객체 자체
+2. 메소드에 매개변수로 전달된 객체
+3. 그 메소드에서 생성하거나 인스턴스를 만든 객체
+4. 그 객체에 속하는 구성요소
+
+ex)
+원칙을 따르지 않는 경우
+public float getTemp() {
+    Thermometer thermometer = station.getThermometer();
+    return thermometer.getTemperature();
+}
+
+원칙을 따르는 경우
+public float getTemp() {
+    return station.getTemperature();
+}
