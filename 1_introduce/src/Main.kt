@@ -8,7 +8,7 @@ fun main() {
     duck.display()
     duck.swim()
     duck.performFly()
-
+    duck.performFly()
     duck.flyBehavior = FlyRocketPowered()
     duck.performFly()
 }
