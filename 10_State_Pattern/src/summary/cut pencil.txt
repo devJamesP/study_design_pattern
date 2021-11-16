@@ -1,0 +1,7 @@
+뽑기 기계용 refill()메소드를 만들고, 알맹이 개수 인자를 받고, 기계의 상태와 개수를 저장하라.
+    fun refill(count: Int) {
+        if (count <= 0) return
+        println("알맹이를 충전합니다.")
+        _count = count
+        state = noQuarterState
+    }
