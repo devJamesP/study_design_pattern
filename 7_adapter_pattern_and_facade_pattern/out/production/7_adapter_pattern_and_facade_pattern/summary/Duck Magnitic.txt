@@ -1,0 +1,17 @@
+[오리 자석]
+DuckAdapter를 만든다고 했을 때(Turkey -> Duck으로 둔갑!!)
+
+Client = Turkey 요청
+Target = Duck
+Adapter = Duck 변환
+Adaptee = Turkey
+
+[클래스 어댑터](다중상속)
+Client (생성) -> Target(request()) 클래스
+Adapter(request()) (상속) -> Target(request())
+Adapter(request()) (상속) -> Adaptee(specificRequest()) 클래스
+
+[객체 어댑터]
+Client (생성) -> Target(request()) 인터페이스
+Adapter(request()) (구현) -> Target(request())
+Adapter(request()) (구성) -> Adaptee(specificRequest()) 구성(객체)

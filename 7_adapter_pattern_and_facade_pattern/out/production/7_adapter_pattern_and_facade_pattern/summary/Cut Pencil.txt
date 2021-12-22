@@ -1,0 +1,12 @@
+Duck -> Turkey로 변환 해주는 어댑터를 만들어 보기
+class DuckAdapter(private val duck: Duck): Turkey {
+    override fun gobble()
+        duck.quack()
+    }
+    override fun fly() {
+        duck.fly()
+        duck.fly()
+        duck.fly()
+        duck.fly()
+    }
+}

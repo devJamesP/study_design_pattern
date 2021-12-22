@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/10_State_Pattern/10_State_Pattern.iml" filepath="$PROJECT_DIR$/10_State_Pattern/10_State_Pattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/11_Proxy_Pattern/11_Proxy_Pattern.iml" filepath="$PROJECT_DIR$/11_Proxy_Pattern/11_Proxy_Pattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/12_Compound_Pattern/12_Compound_Pattern.iml" filepath="$PROJECT_DIR$/12_Compound_Pattern/12_Compound_Pattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/1_introduce/1_introduce.iml" filepath="$PROJECT_DIR$/1_introduce/1_introduce.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2_Observer_Pattern/2_Observer_Pattern.iml" filepath="$PROJECT_DIR$/2_Observer_Pattern/2_Observer_Pattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/3_Decorater_Pattern/3_Decorater_Pattern.iml" filepath="$PROJECT_DIR$/3_Decorater_Pattern/3_Decorater_Pattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/4_Factory_Pattern/4_Factory_Pattern.iml" filepath="$PROJECT_DIR$/4_Factory_Pattern/4_Factory_Pattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/5_Singleton_Pattern/5_Singleton_Pattern.iml" filepath="$PROJECT_DIR$/5_Singleton_Pattern/5_Singleton_Pattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/6_Command_Pattern/6_Command_Pattern.iml" filepath="$PROJECT_DIR$/6_Command_Pattern/6_Command_Pattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/7_adapter_pattern_and_facade_pattern/7_adapter_pattern_and_facade_pattern.iml" filepath="$PROJECT_DIR$/7_adapter_pattern_and_facade_pattern/7_adapter_pattern_and_facade_pattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/8_Template_Pattern/8_Template_Pattern.iml" filepath="$PROJECT_DIR$/8_Template_Pattern/8_Template_Pattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/9_Iterator_Pattern_and_Composite_Pattern/9_Iterator_Pattern_and_Composite_Pattern.iml" filepath="$PROJECT_DIR$/9_Iterator_Pattern_and_Composite_Pattern/9_Iterator_Pattern_and_Composite_Pattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/study_design_pattern.iml" filepath="$PROJECT_DIR$/.idea/study_design_pattern.iml" />
+    </modules>
+  </component>
+</project>

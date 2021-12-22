@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="82a7c6aa-cc6a-4ad4-b85d-2bf121e13369" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/10_State_Pattern/10_State_Pattern.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/11_Proxy_Pattern/11_Proxy_Pattern.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_Compound_Pattern/12_Compound_Pattern.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1_introduce/1_introduce.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_Observer_Pattern/2_Observer_Pattern.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/3_Decorater_Pattern/3_Decorater_Pattern.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_Factory_Pattern/4_Factory_Pattern.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/5_Singleton_Pattern/5_Singleton_Pattern.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/6_Command_Pattern/6_Command_Pattern.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7_adapter_pattern_and_facade_pattern/7_Adapter_Pattern_and_Facade_Pattern.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8_Template_Pattern/8_Template_Pattern.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/9_Iterator_Pattern_and_Composite_Pattern/9_Iterator_Pattern_and_Composite_Pattern.iml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="22GdLXlALGgTaAyP4vGCtBqv3z6" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="82a7c6aa-cc6a-4ad4-b85d-2bf121e13369" name="Changes" comment="" />
+      <created>1639467803939</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1639467803939</updated>
+    </task>
+    <servers />
+  </component>
+</project>
